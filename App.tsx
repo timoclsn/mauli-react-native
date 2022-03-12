@@ -1,26 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
+import { Box } from "./src/design-system/components/Box";
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Text
-        style={{
-          fontSize: 50,
-          fontWeight: "bold",
-          color: "black",
-        }}
-      >
-        homee
-      </Text>
+    <Box justifyContent="center" alignItems="center" width="full" height="full">
+      <Text>Hello World!</Text>
       <StatusBar style="auto" />
-    </View>
+    </Box>
   );
 }
